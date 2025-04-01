@@ -1,0 +1,247 @@
+.account-settings {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #2d3436;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .account-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #1a1d1f;
+  }
+  
+  .settings-section {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f2f5;
+  }
+  
+  .settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #2d3436;
+  }
+  
+  .setting-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .setting-item {
+    margin-bottom: 24px;
+  }
+  
+  .avatar-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid #e0e3e7;
+  }
+  
+  .avatar-initials {
+    color: #555;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar-actions {
+    flex: 1;
+  }
+  
+  .photo-action-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .photo-action {
+    white-space: nowrap;
+  }
+  
+  .setting-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  .character-count {
+    font-size: 12px;
+    color: #7d8b99;
+  }
+  
+  .setting-description {
+    font-size: 14px;
+    color: #636e72;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  
+  .text-button {
+    background: none;
+    border: none;
+    color: #0672e8;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .text-button:hover {
+    background: #f0f7ff;
+  }
+  
+  .text-button.danger {
+    color: #e74c3c;
+  }
+  
+  .text-button.danger:hover {
+    background: #fef0ef;
+  }
+  
+  .primary-button {
+    background: #0672e8;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+  }
+  
+  .primary-button:hover {
+    background: #0561c5;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 12px;
+    background: white;
+    transition: all 0.2s ease;
+  }
+  
+  .social-icon {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .social-button.facebook {
+    color: #1877f2;
+    border-color: #1877f2;
+  }
+  
+  .social-button.apple {
+    color: #000;
+    border-color: #000;
+  }
+  
+  .social-button:hover {
+    background: #f8f9fa;
+  }
+  
+  .connected-account {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .connection-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .danger-zone {
+    border-color: #fdecea !important;
+  }
+  
+  .danger-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+  }
+  
+  .danger-button:hover {
+    background: #c0392b;
+  }
+  
+  @media (max-width: 768px) {
+    .account-settings {
+      padding: 16px;
+    }
+    
+    .avatar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .photo-action-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .setting-value,
+    .connection-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .social-button {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
